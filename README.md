@@ -1,2 +1,2 @@
-# WifiEncryptionSimulation
+# Wifi Encryption Simulation
 An implement of encryption methods on Wifi (or Wireless communication field): WEP, AES-CCMP,...
