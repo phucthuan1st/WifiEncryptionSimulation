@@ -1,0 +1,4 @@
+﻿  Main.cpp
+E:\HOC TAP\HK2_Nam3_2023-2024\MHUD\WEP\WEP\Main.cpp(19,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\HOC TAP\HK2_Nam3_2023-2024\MHUD\WEP\WEP\Main.cpp(76,58): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  WEP.vcxproj -> E:\HOC TAP\HK2_Nam3_2023-2024\MHUD\WEP\x64\Debug\WEP.exe
