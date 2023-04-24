@@ -1,0 +1,12 @@
+Create a `Socket Server` class and `Socket Client` class, with following described:
+
+- Server can connect to a specific ip address and port (this can be archive through user input or GUI interface).
+- Many clients can connect to this server concurrently.
+- Each clients when make a connection will need to send a tuple of (username, masterkey), if masterkey is correct, allow that client to connect to server.
+- Server will store a list of client that connect to its.
+- Server work as an intermediate, transport a message from a sender client to recipent client.
+- A client that connect to server can send message to an other specific client that connected to server too.
+- When client recieve a message, it will display that message (logging or display in GUI, Client class work as backend)
+- When server close, close all connection of client.
+
+The two class above work as an backend, give me the code of it, and I will describe another issue for you.
