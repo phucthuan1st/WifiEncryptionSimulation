@@ -1,17 +1,16 @@
+cmake_minimum_required(VERSION 3.5)
 project(Server)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+# Add include directories
 include_directories(${CMAKE_SOURCE_DIR}/WEP)
 include_directories(${CMAKE_SOURCE_DIR}/AES-CCMP)
 include_directories(${CMAKE_SOURCE_DIR}/Component)
-SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
+# Add the target
 add_executable(Server ${CMAKE_SOURCE_DIR}/src/Server/main.cpp)
 
-find_package(wxWidgets REQUIRED COMPONENTS core base)
-include(${wxWidgets_USE_FILE})
-target_link_libraries(Server
-    ${wxWidgets_LIBRARIES}
-    wx_gtk3u_adv-3.0
-    wx_gtk3u_core-3.0
-    wx_baseu-3.0
-)
+# Link the wxWidgets libraries
+target_link_libraries(Server ${wxWidgets_LIBRARIES})
